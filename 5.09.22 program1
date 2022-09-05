@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+    int n,m;
+    scanf("%d%d",&n,&m);
+    display (n,m);
+}
+void display(int start,int end)
+{
+    if(start>end)
+      return;
+    else
+      printf("%d\t",start);
+      display(start+1,end);
+}
+output:
+4 10
+4	5	6	7	8	9	10	
